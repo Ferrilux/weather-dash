@@ -1,3 +1,14 @@
 body {
     font-family: 'Raleway';
+    margin-inline: 15%;
+}
+
+#app {
+    /* Spread the container to whole page size */
+    height: 100vh;
+    
+    /* Grid display to fix Header and Footer to top and bottom */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
 }
