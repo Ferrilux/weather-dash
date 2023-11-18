@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
-export const StyledDashboard = styled.div`
+export const StyledCard = styled.div`
     /* setings for external grid - Header/Dash/Footer */
     overflow: auto;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-
+    
     /* Internal dashboard grid with 2 columns*/
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 70% minmax(0, 30%);
+    column-gap: 15px;
 
     /* From https://css.glass - styling for glass-like card effect */
     background: rgba(255, 255, 255, 0.2);
